@@ -1,0 +1,24 @@
+NET "clk" LOC = T9;
+NET "reset" LOC = "F12";
+
+#keyboard
+NET "PS2C" LOC = M16;
+NET "PS2D" LOC = M15;
+
+#VGA
+NET "rgb<2>" LOC = "R12" | DRIVE=8 | SLEW=FAST;
+NET "rgb<1>" LOC = "T12" | DRIVE=8 | SLEW=FAST;
+NET "rgb<0>" LOC = "R11" | DRIVE=8 | SLEW=FAST;
+NET "vsync" LOC = "T10" | DRIVE=8 | SLEW=FAST;
+NET "hsync" LOC = "R9" | DRIVE=8 | SLEW=FAST;
+
+#Buttons
+#NET "btn<2>" LOC = "L14";
+#NET "btn<3>" LOC = "L13";
+#NET "btn<1>" LOC = "M14";
+#NET "btn<0>" LOC = "M13";
+
+#screens
+NET "screen_sel" LOC = "K13";
+#NET "screen_sel<1>" LOC = "H14";
+##NET "screen_sel<0>" LOC = "J14";
